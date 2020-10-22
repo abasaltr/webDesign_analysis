@@ -1,0 +1,367 @@
+body {
+    background: lightgrey;
+}
+
+.navbar {
+    margin-bottom: 40px;
+    background-color: azure;
+}
+
+.navbar-brand{
+    background-color: #00abab; 
+    font-weight: bold;
+    margin-top: -13px;
+    padding-top: 13px;
+    margin-bottom: -13px;
+    padding-bottom: 13px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+.mainborder {
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background: white;
+
+}
+
+.sideborder {
+    border: 1px;
+    border-style: solid;
+    border-color:white;
+    background: white;
+} 
+
+h1 {
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#00abab;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: white;
+    padding-left: 10px; 
+}
+
+h2 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#00abab;
+    width: 200px;
+    position: relative;
+    right: -180px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+hr.solid {
+    border-top: 1px solid #bbb;
+    margin-bottom: 30px;
+}
+
+hr.solidside {
+    border-top: 1px solid #bbb;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    margin-left: -20px;
+}
+
+p {
+    font: arial;
+    font-weight: 500;
+    color: lightslategray
+}
+
+#figure {
+    width: 150px;
+    height: 150px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: 2%;
+    margin: 10px;
+    margin-right: 30px;
+    float: left;
+}
+
+#figure-plot {
+    width: 300%;
+    height: 300%;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: 2%;
+    margin: 10px;
+    margin-right: 30px;
+    float: top;
+}
+
+#figure-compare-l {
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 17px;
+    margin-top: -1px;
+}
+
+#figure-compare-r {
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-left: -17px;
+    margin-top: -1px;
+}
+
+#figure-select {
+    border: 2px;
+    border-style: solid;
+    border-color: #00abab;
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+#figure-side {
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.figleft {
+    background-color: white;
+    margin-top: -1px;
+    padding-left: 20px;
+    margin-right: -16px;
+}
+
+.figright {
+    background-color: white;
+    margin-top: -1px;
+    padding-left: 20px;
+    margin-left: -16px;
+}
+
+.mainframe-index {
+    padding-bottom: 30px;
+    margin-top: -4px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.sideframe-index {
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.mainframe-compare {
+    padding-bottom: 30px;
+    margin-top: -4px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.mainframe {
+    padding-bottom: 30px;
+    margin-top: -4px;
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.sideframe {
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+}
+
+.datatable{
+    position: relative;
+    right: -60px;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+@media (max-width: 1199px) {
+    .datatable{
+        position: relative;
+        right: -1px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #00abab;
+    }
+    .datatable{
+        position: relative;
+        right: -1px;
+    }
+    .sideframe-index {
+        padding-bottom: 40px;
+    }
+    .figleft {
+        margin-top: -1px;
+    }
+    .figright {
+        margin-top: -1px;
+    }
+    #figure-plot {
+        width: 400%;
+        height: 400%;
+        border: 1px;
+        border-style: solid;
+        border-color: white;
+        padding: 2%;
+        margin: 0px;
+        margin-left: -10px;
+        margin-bottom: 20px;
+        float: top;
+    }
+    h2 {
+        right: -100px;
+    }
+} 
+
+@media (max-width: 767px) { 
+    .mainframe-index {
+        position: relative;
+        top: -130px;
+        height: 600px;
+    }
+    .sideframe-index {
+        position: relative;
+        bottom: -596px;
+        padding-bottom: 0px;
+    }
+    .mainframe {
+        position: relative;
+        top: -130px;
+        height: 560px;
+    }
+    .sideframe {
+        position: relative;
+        bottom: -556px;
+    }
+    .figleft {
+        position: relative;
+        margin-top: -40px;
+        bottom: -30px;
+        padding-bottom: 20px;
+    }
+    .figright {
+        position: relative;
+        margin-top: -40px;
+        bottom: -30px;
+        padding-bottom: 20px;
+    }
+    #figure-plot {
+        width: 100%;
+        height: 100%;
+        border: 1px;
+        border-style: solid;
+        border-color: white;
+        padding: 2%;
+        margin: 0px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        float: top;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+    td{
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+    th {
+        font-size: 11px;
+    }
+    h2{
+        right: -150px;
+    }
+    #figure-compare-l {
+        margin-left: 0px;
+    }
+    
+    #figure-compare-r {
+        margin-left: 0px;
+        padding-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 575px) { 
+    .figleft {
+        position: relative;
+        width: 100%;
+    }
+    .figright {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #figure-side {
+        width: 150px;
+        height: 150px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        background-color: white;
+    }
+    hr.solidside {
+        border-top: 1px solid white;
+    }
+    #figure-select {
+        border: 2px;
+        border-style: solid;
+        border-color: #00abab;
+        width: 150px;
+        height: 150px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+    th {
+        font-size: 10px;
+    }
+}
